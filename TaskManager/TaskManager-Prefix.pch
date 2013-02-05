@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'TaskManager' target in the 'TaskManager' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import "CoreDataManager.h"
+#endif
+    #import "RootVC.h"
+
+    #define y_offset(r) (r.frame.origin.y+r.frame.size.height)
+    #define x_offset(r) (r.frame.origin.x+r.frame.size.width)
+
+
